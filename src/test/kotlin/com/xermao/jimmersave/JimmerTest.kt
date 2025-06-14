@@ -7,6 +7,7 @@ import org.babyfish.jimmer.sql.kt.KSqlClient
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
+import org.springframework.test.context.jdbc.Sql
 
 
 @SpringBootTest
@@ -16,6 +17,7 @@ class JimmerTest(
     private lateinit var sqlClient: KSqlClient
 
     @Test
+    @Sql("/database.sql")
     fun test() {
 
         val steamBundle = SteamBundle {
