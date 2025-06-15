@@ -10,6 +10,6 @@ interface SteamGame : IdEntity {
     @Column(name = "appid")
     val appid: Int
 
-    @ManyToMany
+    @ManyToMany(mappedBy = "apps")
     val bundles: List<SteamBundle>
 }
