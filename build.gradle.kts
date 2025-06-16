@@ -20,13 +20,12 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation ("org.junit.jupiter:junit-jupiter-api")
     testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine")
-    implementation("org.babyfish.jimmer:jimmer-spring-boot-starter:0.9.92")
+    implementation("org.babyfish.jimmer:jimmer-spring-boot-starter:0.9.93")
     runtimeOnly("com.mysql:mysql-connector-j")
     testRuntimeOnly("com.mysql:mysql-connector-j")
     runtimeOnly("com.h2database:h2:2.3.232")
     testRuntimeOnly("com.h2database:h2:2.3.232")
-//    testImplementation("com.h2database:h2:2.3.232")
-    ksp("org.babyfish.jimmer:jimmer-ksp:0.9.92")
+    ksp("org.babyfish.jimmer:jimmer-ksp:0.9.93")
 }
 
 tasks.withType<Test> {
